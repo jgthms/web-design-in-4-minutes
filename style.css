@@ -1,0 +1,308 @@
+/* Base styles */
+
+a strong {
+  color: inherit;
+}
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #d8dee9;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+  text-align: center;
+}
+
+/* 01 Centering */
+
+header,
+main {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* 02 Font family */
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* 03 Spacing */
+
+body {
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+/* 04 Color and contrast */
+
+body {
+  color: #555;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+/* 05 Balance */
+
+code,
+pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+
+/* 06 Primary color */
+
+a {
+  color: #e81c4f;
+}
+
+/* 07 Secondary colors */
+
+body {
+  background: white;
+  color: #566b78;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial;
+}
+
+pre {
+  border-left: 2px solid #69c;
+}
+
+.selector {
+  color: #ec5f67;
+}
+
+.keyword {
+  color: #ab7967;
+}
+
+.unit {
+  color: #fac863;
+}
+
+.attribute {
+  color: #5fb3b3;
+}
+
+.number {
+  color: #f99157;
+}
+
+.string {
+  color: #c594c5;
+}
+
+/* 08 Custom font */
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+strong {
+  font-weight: 500;
+}
+
+/* 09 Images */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 4em 1em;
+}
+
+header {
+  background-color: #263d36;
+  background-image: url("header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  max-width: none;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+#logo {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+/* Classes */
+
+.animate {
+  animation-duration: 1s;
+  animation-name: blink;
+}
+
+@keyframes blink {
+  from {
+    background-color: lightyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+html a.button {
+  border: 1px solid #d8dee9;
+  border-radius: 290486px;
+  color: #b0bfc7;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.button:hover {
+  background: #e81c4f;
+  border-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button em {
+  display: block;
+  font-size: 0.6em;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button strong {
+  color: #e81c4f;
+  transition: color 200ms ease-out;
+}
+
+.button:hover strong {
+  color: white !important;
+}
+
+.button.github strong {
+  color: #333;
+}
+
+.button.github:hover {
+  background: #333;
+}
+
+.button.facebook strong {
+  color: #3b5998;
+}
+
+.button.facebook:hover {
+  background: #3b5998;
+}
+
+.button.twitter strong {
+  color: #55acee;
+}
+
+.button.twitter:hover {
+  background: #55acee;
+}
+
+footer .button {
+  font-size: 0.8em;
+  padding: 1em 2em;
+}
+
+.buttons .button {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* Responsiveness */
+
+@media (min-width: 600px) {
+  .buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+  }
+
+  .buttons .button {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 1em
+  }
+
+  .buttons .button:last-child {
+    margin-right: 0;
+  }
+}
