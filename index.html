@@ -3,6 +3,23 @@
   <head>
     <title>Web Design in 4 minutes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url" content="http://jgthms.com/web-design-in-4-minutes/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Design in 4 minutes">
+    <meta property="og:description" content="Learn the basics of web design in 4 minutes with this interactive tutorial.">
+    <meta property="og:image" content="http://jgthms.com/web-design-in-4-minutes/web-design-in-4-minutes.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="330">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jgthms">
+    <meta name="twitter:creator" content="@jgthms">
+    <meta name="twitter:title" content="Web Design in 4 minutes">
+    <meta name="twitter:description" content="Learn the basics of web design in 4 minutes with this interactive tutorial.">
+    <meta name="twitter:image" content="http://jgthms.com/web-design-in-4-minutes/web-design-in-4-minutes.png">
+
     <link rel="stylesheet" type="text/css" href="website.css">
   </head>
   <body>
@@ -16,14 +33,14 @@
 
     <main>
       <section id="start">
-        <p>Let's say you have a product, a porfolio, or just an idea you want to share with everyone on your <em>own</em> website. Before you publish it on the internet, you want to make it look attractive, professional, or at least <em>decent</em> to look at.</p>
+        <p>Let's say you have a product, a portfolio, or just an idea you want to share with everyone on your <em>own</em> website. Before you publish it on the internet, you want to make it look attractive, professional, or at least <em>decent</em> to look at.</p>
         <p>What is the <a class="step" data-step="0" href="#content">first thing</a> you need to work on?</p>
       </section>
 
       <section id="content">
         <h2>Content</h2>
         <p>The purpose of <strong>design</strong> is to enhance the presentation of the content it's applied to. It might sound obvious, but content being the <strong>primary</strong> element of a website, it should not be established as an afterthought.</p>
-        <p>Written content, like the paragraph you're currently reading. makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
+        <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
         <p>Let's assume you've already finalised the content you want to publish and just created an empty <code>style.css</code> file, what is the <a class="step" data-step="1" href="#centering">first rule</a> you can write?</p>
       </section>
 
@@ -132,7 +149,7 @@
 <pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
 
 <span class="selector">body</span> {
-  <span class="attribute">font-family</span>: <span class="string">"Roboto"</span> <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+  <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
 }</pre>
         <p>After enhancing your identity through <em>text</em>, how about adding a <a class="step" data-step="9" href="#images">thousand words</a>...</p>
       </section>
@@ -141,7 +158,7 @@
         <h2>
           <img src="images.png" alt="Spongebob rainbow meme saying 'Images'">
         </h2>
-        <p>Graphics and icons can be used either as ornaments to support your content, or take actively part in the message you want to convey.</p>
+        <p>Graphics and icons can be used either as ornaments to support your content, or actively take part in the message you want to convey.</p>
         <p>Let's enhance our header with a nice <strong>background image</strong> from <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a></p>
 <pre><span class="selector">header</span> {
   <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
