@@ -279,6 +279,7 @@ function addStep(number, target) {
 }
 
 visited.onclick = function() {
+  loadGoogleFont();
   for (var i=0; i < 11; i++) {
     html.className += ' step' + i;
   }
