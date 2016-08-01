@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Diseño Web en 4 minutos</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -11,6 +12,7 @@
       <h1>Diseño Web en 4 minutos</h1>
       <p>
         <a href="http://jgthms.com" target="_blank">por Jeremy Thomas</a>
+        <!-- Traduction done by Juan Beleño-->
       </p>
     </header>
 
@@ -20,7 +22,7 @@
         	Vamos a decir que tienes un producto, un portafolio, o solo una idea 
         	que quieres compartir con todos en tu <em>propia</em> página web. Antes
         	de publicarla en internet, quieres hacerla atractiva, profesional, o al 
-        	menos <em>decente</em> de mirar.
+        	menos <em>decente</em> de ver.
         </p>
         <p>
         	¿Cuál es la <a href="#content">primera cosa</a> en la que necesitas trabajar?
@@ -55,13 +57,10 @@
         	línea mejorar de gran manera la legibilidad y el atractivo de un bloque de
         	texto.
         </p>
-		<pre>
-			<span class="selector">body</span> 
-			{
-				<span class="attribute">margin</span>: <span class="number">0</span> auto;
-				<span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
-			}
-		</pre>
+<pre><span class="selector">body</span>{
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
 		<p>
 			Después de estilizar los <em>bloques</em> de texto, ¿qué pasa con el estilo 
 			del <a href="#font-family">texto</a>?
@@ -77,12 +76,10 @@
         	como <code>"Helvetica"</code> o  <code>"Arial"</code> puede mejorar de gran 
         	manera la apariencia de tu página web.
         </p>
-		<pre>
-			<span class="selector">body</span> 
-			{
-		  		<span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
-			}
-		</pre>
+<pre>
+<span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+}</pre>
         <p>
         	<em> Si quieres mantener una tipografía serif, prueba con <code>"Georgia"</code>.</em>
         </p>
@@ -94,24 +91,22 @@
       <section id="spacing">
         <h2>Espacios</h2>
         <p>
-         	Cuando una página web luce "rota" para un usuario, es usualmente por 
+         	Cuando una página web luce como si "algo le faltara" a un usuario, es usualmente por 
          	problemas de <strong>espacios</strong>. Proporcionar espacios <em>fuera</em>
          	y <em>dentro</em> de tu contenido puede incrementar el atractivo de tu página 
          	web.
         </p>
-        <pre>
-        	<span class="selector">body</span> 
-        	{
-			  	<span class="attribute">line-height</span>: <span class="number">1.5</span>;
-			  	<span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
-			}
+<pre>
+<span class="selector">body</span> {
+  <span class="attribute">line-height</span>: <span class="number">1.5</span>;
+  <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
+}
 
-			<span class="selector">h2</span> 
-			{
-			  	<span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
-			  	<span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
-			}
-		</pre>
+<span class="selector">h2</span> {
+  <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
+  <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
+}
+</pre>
 		<p> 
 			Aprovechando que el diseño ha mejorado muchísimo, vamos a aplicar más 
 			<a href="#color-contrast">cambios sutiles</a>.
@@ -125,25 +120,23 @@
 				por una tonalidad más clara del negro para el texto hace la página 
 				web más <strong>cómoda</strong> de leer.
 			</p>
-			<pre>
-				<span class="selector">body</span> 
-				{
-				  <span class="attribute">color</span>: <span class="number">#555</span>;
-				}
-			</pre>
+<pre>
+<span class="selector">body</span>{
+  <span class="attribute">color</span>: <span class="number">#555</span>;
+}
+</pre>
 			<p>
 				Y con el fin de mantener un nivel decente de <strong>contraste</strong>,
 				vamos a escoger una tonalidad más oscura para palabras 
 				<strong>importantes</strong>.
 			</p>
-			<pre>
-				<span class="selector">h1</span>,
-				<span class="selector">h2</span>,
-				<span class="selector">strong</span> 
-				{
-			  		<span class="attribute">color</span>: <span class="number">#333</span>;
-				}
-		</pre>
+<pre>
+<span class="selector">h1</span>,
+<span class="selector">h2</span>,
+<span class="selector">strong</span> {
+  <span class="attribute">color</span>: <span class="number">#333</span>;
+}
+</pre>
 		<p>
 			Aunque la mayoría de la página web ha mejorado visualmente, algunos elementos
 			(como los bloques de código) aún parecen <a href="#balance">fuera de lugar</a>.
@@ -153,29 +146,26 @@
       <section id="balance">
         <h2>Balance</h2>
         <p>
-        	Solo va a tomar unos pequeños retoques para corregir el balance de la página
+        	Solo necesitamos unos pequeños retoques para corregir el balance de la página
         	web:
         </p>
-		<pre>
-			<span class="selector">code</span>,
-			<span class="selector">pre</span> 
-			{
-			  <span class="attribute">background</span>: <span class="number">#eee</span>;
-			}
+<pre>
+<span class="selector">code</span>,
+<span class="selector">pre</span>{
+  <span class="attribute">background</span>: <span class="number">#eee</span>;
+}
 
-			<span class="selector">code</span> 
-			{
-			  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
-			  <span class="attribute">vertical-align</span>: text-bottom;
-			}
+<span class="selector">code</span> {
+  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
+  <span class="attribute">vertical-align</span>: text-bottom;
+}
 
-			<span class="selector">pre</span> 
-			{
-			  <span class="attribute">padding</span>: <span class="number">1</span>em;
-			}
-		</pre>
+<span class="selector">pre</span> {
+  <span class="attribute">padding</span>: <span class="number">1</span>em;
+}
+</pre>
 		<p>
-			Ene ste punto, you tal vez quieres destacar tu página web y darle 
+			En este punto, tal vez quieres destacar tu página web y darle 
 			<a href="#primary-color">identidad</a>.
 		</p>
       </section>
@@ -183,19 +173,29 @@
       <section id="primary-color">
         <h2>Color principal</h2>
         <p>
-        	Muchas 
+        	Muchas marcas tiene un <strong>color primario</strong> que sirve para 
+        	resaltar visualmente. En una página web, este realce puede ser usado
+        	para dar enfasis en elemento interactivos, como <strong>enlaces</strong>.
         </p>
-        <p>Most brands have a <strong>primary color</strong> that acts as a visual accent. On a website, this accent can be used to provide emphasis on interactive elements, like <strong>links</strong>.</p>
-<pre><span class="selector">a</span> {
+<pre>
+<span class="selector">a</span> {
   <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
-}</pre>
-        <p>But to keep the balance, we will need some <a href="#secondary-colors">additional colors</a>.</p>
+}
+</pre>
+        <p>
+        	Pero para mantener el balance, necesitaremos algunos 
+        	<a href="#secondary-colors">colores adicionales</a>.
+        </p>
       </section>
 
       <section id="secondary-colors">
-        <h2>Secondary colors</h2>
-        <p>The accent color can be complemented with more <em>subtle</em> shades, to be used on borders, backgrounds, or even the body text.</p>
-<pre><span class="selector">body</span> {
+        <h2>Colores secundarios</h2>
+        <p>
+        	El realce de color puede ser complementado con tonalidades más
+        	<em>sutiles</em>, usandos en bordes, fondos, o incluso el cuerpo del texto.
+        </p>
+<pre>
+<span class="selector">body</span> {
   <span class="attribute">color</span>: <span class="number">#566b78</span>;
 }
 
@@ -208,29 +208,54 @@
 
 <span class="selector">pre</span> {
   <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
-}</pre>
-        <p>Having changed the shades, why not change the <a href="#custom-font">shapes</a>...</p>
+}
+</pre>
+        <p>
+        	Luego de cambiar las tonalidades, ¿por qué no cambiar 
+        	<a href="#custom-font">la forma</a>...?
+        </p>
       </section>
 
       <section id="custom-font">
-        <h2>Custom font</h2>
-        <p>Since text is the main content of a webpage, using a <strong>custom font</strong> gives the page even more noticeable identity.</p>
-        <p>While you can embed your own webfont or use an online service like <a href="https://typekit.com" target="_blank">Typekit</a>, let's use <code>"Roboto"</code> from the free <a href="https://fonts.google.com" target="_blank">Google Fonts</a> service:</p>
-<pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
+        <h2>Tipografía personalizada</h2>
+        <p>
+        	Como el texto es el contenido principal de la página web, el uso de una 
+        	<strong>tipografía personalizada</strong> da una identidad incluso más 
+        	perceptible.
+        </p>
+        <p>
+        	Aunque puedes incluir tu propia tipografía o usar un servicio en línea como 
+        	<a href="https://typekit.com" target="_blank">Typekit</a>, vamos a usar 
+        	<code>"Roboto"</code> del servicio gratuito 
+        	<a href="https://fonts.google.com" target="_blank">Google Fonts:</a>
+        </p>
+<pre>
+<span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
 
 <span class="selector">body</span> {
   <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
-}</pre>
-        <p>After enhancing your identity through <em>text</em>, how about adding a <a href="#images">thousand words</a>...</p>
+}
+</pre>
+		<p>
+			Después de mejorar la identidad de la página web usando <em>texto</em>, 
+			¿qué pasa si agregamos unas <a href="#images">mil palabras </a>...?
+		</p>
       </section>
 
       <section id="images">
         <h2>
           <img src="images.png" alt="Spongebob rainbow meme saying 'Images'">
         </h2>
-        <p>Graphics and icons can be used either as ornaments to support your content, or actively take part in the message you want to convey.</p>
-        <p>Let's enhance our header with a nice <strong>background image</strong> from <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a></p>
-<pre><span class="selector">header</span> {
+        <p>
+        	Gráficos e iconos pueden ser usados para apoyar tu contenido, o  
+        	para tomar parte activa en el mensaje que quieres transmitir.
+        </p>
+        <p>
+        	Vamos a mejorar nuestro encabezado con una bonita 
+        	<strong>imagen de fondo</strong> de <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a>
+        </p>
+<pre>
+<span class="selector">header</span> {
   <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
   <span class="attribute">background-image</span>: url(<span class="string">"header.jpg"</span>);
   <span class="attribute">background-position</span>: center top;
@@ -239,16 +264,22 @@
   <span class="attribute">line-height</span>: <span class="number">1.2</span>;
   <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
   <span class="attribute">text-align</span>: center;
-}</pre>
-        <p>Let's also add a <strong>logo</strong></p>
-<pre><span class="selector">header img</span> {
+}
+</pre>
+        <p>Vamos a agregar un <strong>logo</strong></p>
+<pre>
+<span class="selector">header img</span> {
   <span class="attribute">display</span>: inline-block;
   <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
   <span class="attribute">vertical-align</span>: top;
   <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
-}</pre>
-        <p>Let's take that opportunity to enhance the text styles.</p>
-<pre><span class="selector">header h1</span> {
+}
+</pre>
+        <p>
+        	Vamos a aprovechar esta oportunidad para mejorar los estilos de los textos.
+        </p>
+<pre>
+<span class="selector">header h1</span> {
   <span class="attribute">color</span>: white;
   <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
   <span class="attribute">font-weight</span>: <span class="number">300</span>;
@@ -270,16 +301,21 @@
 <span class="selector">header a:hover</span> {
   <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
   <span class="attribute">color</span>: white;
-}</pre>
-        <p><a href="#header">And voil&agrave;</a>!</p>
-        <p>We've designed a decent page in just a few minutes, following basic principles of web design. There's only <a href="#share">one last thing</a> left to do...</p>
+}
+</pre>
+        <p>¡<a href="#header">voil&agrave;</a>!</p>
+        <p>
+        	Hemos diseñado una página web decente en solo unos minutos, siguiendo 
+        	estos principios básicos de diseño web. Solo hay 
+        	<a href="#share">una última cosa</a> por hacer...
+        </p>
       </section>
 
       <section id="share">
-        <h2>Share the love!</h2>
+        <h2>¡Comparte el conocimiento!</h2>
         <nav class="buttons">
           <a class="button github" href="https://github.com/jgthms/web-design-in-4-minutes" target="_blank">
-            <em>Download on</em> <strong>GitHub</strong>
+            <em>Descargar en</em> <strong>GitHub</strong>
           </a>
           <a
             class="button facebook"
@@ -287,7 +323,7 @@
             rel="nofollow"
             target="_blank"
             >
-            <em>Share on</em> <strong>Facebook</strong>
+            <em>Compartir en</em> <strong>Facebook</strong>
           </a>
           <a
             class="button twitter"
@@ -298,16 +334,23 @@
             rel="nofollow"
             target="_blank"
             >
-            <em>Share on</em> <strong>Twitter</strong>
+            <em>Compartir en</em> <strong>Twitter</strong>
           </a>
         </nav>
-        <p>If you want to learn more about web design, check out <a href="http://marksheet.io" target="_blank"><strong>MarkSheet</strong>, my free HTML and CSS tutorial</a>.<br>
-        Or if you want to get started right away, try out <a href="http://bulma.io" target="_blank"><strong>Bulma</strong>, my CSS framework based on Flexbox</a>.</p>
-        <p>Thanks for reading!</p>
+        <p>
+        	Si quieres aprender más acerca de diseño web, revisa 
+        	<a href="http://marksheet.io" target="_blank"><strong>MarkSheet</strong></a>,
+        	mi tutorial gratuito de HTML y CSS. 
+        	<br>
+        	O si quieres empezar inmediatamente, prueba 
+        	<a href="http://bulma.io" target="_blank"><strong>Bulma</strong></a>, 
+        	mi framework CSS basado en Flexbox.
+        </p>
+        <p>¡Gracias por leer!</p>
       </section>
 
       <footer>
-        <a class="button" href="https://twitter.com/jgthms" target="_blank">Made by <strong>@jgthms</strong></a>
+        <a class="button" href="https://twitter.com/jgthms" target="_blank">Hecho por <strong>@jgthms</strong></a>
       </footer>
     </main>
 
