@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4分でウェブデザイン</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="../jt.png" alt="JT logo">
+      <h1>4分でウェブデザイン</h1>
+      <p>
+        <a href="http://jgthms.com" target="_blank">by Jeremy Thomas</a>
+      </p>
+    </header>
+
+    <main>
+      <section id="start">
+        <p>例えばあなたが作った製品、ポートフォリオ、またはただのアイデアを<em>自分の</em> ウェブサイトにのせてみんなと共有したいと思ったとしましょう。インターネットに公開する前に魅力的・プロっぽい、少なくとも<em>まともな</em>見た目にしたいですよね。</p>
+        <p>そのために <a href="#content">最初に</a> しなくてはいけないことは何でしょう？</p>
+      </section>
+
+      <section id="content">
+        <h2>コンテンツ</h2>
+        <p><strong>デザイン</strong>の目的は、そのデザインをあてるコンテンツの表現力を増すことです。当然のように聞こえるでしょうが、コンテンツがウェブサイトで<strong>一番</strong>重要な要素であって、決してデザインの付けたしであってはいけません。</p>
+        <p>ウェブの90%以上を占めるのは、あなたが今読んでいるような文章のコンテンツです。従って、文章のスタイルを整えることができれば十分役に立つでしょう。</p>
+        <p>あなたは既に公開したいコンテンツは書き終えて、まだなにも書かれていない<code>style.css</code> ファイルを作ったばかりだとしましょう。 あなたが書くべき<a href="#centering">最初のルール</a> は何でしょう？</p>
+      </section>
+
+      <section id="centering">
+        <h2>中央寄せ</h2>
+        <p>1行あたりの文字数が多いと解析するのが難しく、従って<strong>読む</strong>のが大変です。　1行あたりの文字数を制限することで、格段によみやすくなり、素敵な文字の壁ができます。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
+        <p>文字の <em>かたまり</em>のスタイル整えることができたら、<a href="#font-family">文字そのもの</a>のスタイルを整えるのはどうでしょう？</p>
+      </section>
+
+      <section id="font-family">
+        <h2>フォント</h2>
+        <p>ブラウザの標準のフォントは<code>"Times"</code>で、これは魅力的には見えません（"スタイル"が整ていないフォントだからでしょう）。 <strong>サンセリフ体</strong> のフォント、例えば <code>"Helvetica"</code> または <code>"Arial"</code> に変更すると、あなたのページを大幅に改善できまｓ。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p><em>もしセリフ隊にこだわりがあるののなら <code>"Georgia"</code>を試してみてください。</em></p>
+        <p>これにより、文章が<em>魅力的に</em>なりました。さあ、それでは<a href="#spacing">より読みやすく</a>してみましょう。</p>
+      </section>
+
+      <section id="spacing">
+        <h2>余白</h2>
+        <p>ページが "壊れている" ように見える理由は、たいてい <strong>余白</strong> の問題です。　余白をコンテンツの<em>周り</em> と <em>内側</em>に設定すると、ページが魅力的になります。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">line-height</span>: <span class="number">1.5</span>;
+  <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
+}
+
+<span class="selector">h2</span> {
+  <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
+  <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
+}</pre>
+        <p>レイアウトが大幅に改善されましたので、次は <a href="#color-contrast">微妙な変化</a>をさせましょう。</p>
+      </section>
+
+      <section id="color-contrast">
+        <h2>色 &amp; コントラスト</h2>
+        <p>白地に黒の文字色は目につらい場合があります。文字色を落ち着いた色合いにすることで、ページを読むのがより<strong>快適</strong> になります。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#555</span>;
+}</pre>
+        <p>そして<strong>コントラスト</strong>を適切にするため、<strong>重要な</strong> 言葉の文字色には濃い色合いを選びましょう。</p>
+<pre><span class="selector">h1</span>,
+<span class="selector">h2</span>,
+<span class="selector">strong</span> {
+  <span class="attribute">color</span>: <span class="number">#333</span>;
+}</pre>
+        <p>ページのほとんどの部分の見た目は改善されましたが、いくつかの要素(例えばプログラムコード) は依然として<a href="#balance">適切ではありません</a>。</p>
+      </section>
+
+      <section id="balance">
+        <h2>バランス</h2>
+        <p>ページのバランスを整える為、ちょっとだけ変更します:</p>
+<pre><span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#eee</span>;
+}
+
+<span class="selector">code</span> {
+  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
+  <span class="attribute">vertical-align</span>: text-bottom;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">padding</span>: <span class="number">1</span>em;
+}</pre>
+        <p>この時点で、あなたはページを<a href="#primary-color">個性的</a>にして目立つようにしたくなっていることでしょう。</p>
+      </section>
+
+      <section id="primary-color">
+        <h2>第一の色</h2>
+        <p>ほとんどのブランドには<strong>第一の色</strong>があり、見た目上のアクセントになっています。ウェブサイトでは、このアクセントは<strong>リンク</strong>といったユーザが操作できる要素を強調するために使用します。</p>
+<pre><span class="selector">a</span> {
+  <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
+}</pre>
+        <p>バランスを保つために、いくつか <a href="#secondary-colors">追加の色</a>が必要になります。</p>
+      </section>
+
+      <section id="secondary-colors">
+        <h2>第二の色</h2>
+        <p>アクセントの色は、<em>薄い</em> 色あいによってより引き立ちます。ボーダーや背景色、本文の文字色にも使うことができます。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#566b78</span>;
+}
+
+<span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#f5f7f9</span>;
+  <span class="attribute">border-bottom</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#d8dee9</span>;
+  <span class="attribute">color</span>: <span class="number">#a7adba</span>;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
+}</pre>
+        <p>色合いをかえるのであれば、<a href="#custom-font">形</a>を変えない理由はないですよね...</p>
+      </section>
+
+      <section id="custom-font">
+        <h2>カスタムフォント</h2>
+        <p>ウェブページでは本文が大事なのですから、<strong>カスタムフォント</strong>を使うとページがより目立ち、独自のものになります。</p>
+        <p>独自のウェブフォントや<a href="https://typekit.com" target="_blank">Typekit</a>のようなオンラインサービス使うことができます。それでは、無料で使うことができる<a href="https://fonts.google.com" target="_blank">Google Fonts</a> のサービスから<code>"Roboto"</code> を使ってみましょう。</p>
+<pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
+
+<span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p><em>言葉</em>で独自性を発揮することができたら,、<a href="#images">1000の言葉</a>に匹敵するものを追加するのはどうでしょう...</p>
+      </section>
+
+      <section id="images">
+        <h2>
+          <img src="../images.png" alt="Spongebob rainbow meme saying 'Images'">
+        </h2>
+        <p>画像とアイコンはあなたのコンテンツを飾ったり、あなたのメッセージを伝えるのに一役買います。</p>
+        <p>それでは<a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a>の素敵な<strong>背景画像</strong> を使って、ヘッダをより良くしてみましょう。</p>
+<pre><span class="selector">header</span> {
+  <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
+  <span class="attribute">background-image</span>: url(<span class="string">"header.jpg"</span>);
+  <span class="attribute">background-position</span>: center top;
+  <span class="attribute">background-repeat</span>: no-repeat;
+  <span class="attribute">background-size</span>: cover;
+  <span class="attribute">line-height</span>: <span class="number">1.2</span>;
+  <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-align</span>: center;
+}</pre>
+        <p><strong>ロゴ</strong>も追加しましょう。</p>
+<pre><span class="selector">header img</span> {
+  <span class="attribute">display</span>: inline-block;
+  <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
+  <span class="attribute">vertical-align</span>: top;
+  <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
+}</pre>
+        <p>文字のスタイルを強化してみましょう。</p>
+<pre><span class="selector">header h1</span> {
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
+  <span class="attribute">font-weight</span>: <span class="number">300</span>;
+}
+
+<span class="selector">header a</span> {
+  <span class="attribute">border</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#e81c4f</span>;
+  <span class="attribute">border-radius</span>: <span class="number">290486</span><span class="unit">px</span>;
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">0.6</span><span class="unit">em</span>;
+  <span class="attribute">letter-spacing</span>: <span class="number">0.2</span><span class="unit">em</span>;
+  <span class="attribute">padding</span>: <span class="number">1</span><span class="unit">em</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-transform</span>: uppercase;
+  <span class="attribute">text-decoration</span>: none;
+  <span class="attribute">transition</span>: none <span class="number">200</span><span class="unit">ms</span> ease-out;
+  <span class="attribute">transition-property</span>: color, background;
+}
+
+<span class="selector">header a:hover</span> {
+  <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
+  <span class="attribute">color</span>: white;
+}</pre>
+        <p><a href="#header">じゃじゃーん</a>!</p>
+        <p>わたしたちはほんの数分で、ウェブデザインの基本原則に従ってウェブページをまともなデザインにしてきました。あと<a href="#share">もう一つ</a>だけやることがあります...</p>
+      </section>
+
+      <section id="share">
+        <h2>ラブを共有しよう!</h2>
+        <nav class="buttons">
+          <a class="button github" href="https://github.com/jgthms/web-design-in-4-minutes" target="_blank">
+            <em>Download on</em> <strong>GitHub</strong>
+          </a>
+          <a
+            class="button facebook"
+            href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F"
+            rel="nofollow"
+            target="_blank"
+            >
+            <em>Share on</em> <strong>Facebook</strong>
+          </a>
+          <a
+            class="button twitter"
+            data-social-network="Twitter"
+            data-social-action="tweet"
+            data-social-target="http://jgthms.com/web-design-in-4-minutes/"
+            href="https://twitter.com/intent/tweet?text=Web%20Design%20in%204%20minutes&url=http%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F&via=jgthms"
+            rel="nofollow"
+            target="_blank"
+            >
+            <em>Share on</em> <strong>Twitter</strong>
+          </a>
+        </nav>
+        <p>もしもっとウェブデザインについて学びたければ、<a href="http://marksheet.io" target="_blank"><strong>MarkSheet</strong>をチェックしてみてください。私のつくった無料のHTMLとCSSのチュートリアルです</a>。<br>
+        もしさっさと作り始めたければ、私がFlexboxをベースに作ったCSSフレームワーク<a href="http://bulma.io" target="_blank"><strong>Bulma</strong>を試してみて下さい</a>。</p>
+        <p>読んでくれてありがとう!</p>
+      </section>
+
+      <footer>
+        <a class="button" href="https://twitter.com/jgthms" target="_blank">Made by <strong>@jgthms</strong></a>
+      </footer>
+    </main>
+
+<script type="text/javascript">
+WebFontConfig = {
+  google: {
+    families: ['Roboto:300,400,500']
+  }
+};
+
+(function(d) {
+  var wf = d.createElement('script'), s = d.scripts[0];
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+  s.parentNode.insertBefore(wf, s);
+})(document);
+</script>
+  </body>
+</html>
