@@ -21,9 +21,15 @@ pre {
 }
 
 footer {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 4em;
   text-align: center;
 }
@@ -265,7 +271,9 @@ html.step9 header a {
   padding: 1em 2em;
   text-transform: uppercase;
   text-decoration: none;
+  -webkit-transition: none 200ms ease-out;
   transition: none 200ms ease-out;
+  -webkit-transition-property: color, background;
   transition-property: color, background;
 }
 
@@ -284,8 +292,20 @@ html.step10 footer {
 /* Classes */
 
 .animate {
-  animation-duration: 1s;
-  animation-name: blink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+}
+
+@-webkit-keyframes blink {
+  from {
+    background-color: lightyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
 }
 
 @keyframes blink {
@@ -305,7 +325,9 @@ html a.button {
   padding: 1em 1.5em;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: none 200ms ease-out;
   transition: none 200ms ease-out;
+  -webkit-transition-property: color, background;
   transition-property: color, background;
 }
 
@@ -329,6 +351,7 @@ html a.button strong {
 
 .button strong {
   color: #e81c4f;
+  -webkit-transition: color 200ms ease-out;
   transition: color 200ms ease-out;
 }
 
@@ -378,11 +401,15 @@ footer .button {
 }
 
 .resource {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #d8dee9;
   border-radius: 5px;
   color: #566b78 !important;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 1em;
   padding: 1em 2em;
@@ -406,8 +433,11 @@ footer .button {
 .resource-icon {
   box-sizing: border-box;
   display: block;
-  flex-grow: 0;
-  flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   height: 120px;
   margin: 0;
   margin-right: 1em;
@@ -432,15 +462,24 @@ footer .button {
 
 @media (min-width: 600px) {
   .buttons {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1em 0;
   }
 
   .buttons .button {
-    flex-grow: 1;
-    flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-bottom: 0;
     margin-right: 1em
   }
@@ -450,14 +489,20 @@ footer .button {
   }
 
   .resources {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .resource {
     display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     text-align: center;
   }
 

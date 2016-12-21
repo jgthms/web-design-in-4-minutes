@@ -1,0 +1,18 @@
+{
+  "name": "web-design-in-4-minutes",
+  "version": "1.0.0",
+  "description": "Learn the basics of web design in 4 minutes with this interactive tutorial.",
+  "main": "website.css",
+  "scripts": {
+    "build": "postcss --use autoprefixer --output index.css website.css"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "postcss-cli": "^2.6.0"
+  }
+}
