@@ -285,6 +285,64 @@ footer .button {
   margin-bottom: 1em;
 }
 
+/* Resources */
+
+.resources {
+  margin: 1em 0;
+  padding: 0;
+}
+
+.resource {
+  align-items: center;
+  border: 1px solid #d8dee9;
+  border-radius: 5px;
+  color: #566b78;
+  cursor: pointer;
+  display: flex;
+  margin-top: 1em;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+.resource:hover {
+  border-color: #e81c4f;
+}
+
+.resource strong {
+  color: #e81c4f;
+}
+
+.resource .resource-name {
+  color: #333;
+  display: block;
+  font-size: 1.2em;
+}
+
+.resource-icon {
+  box-sizing: border-box;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 120px;
+  margin: 0;
+  margin-right: 1em;
+  padding: 0;
+  text-align: center;
+  width: 120px;
+}
+
+.resource-marksheet .resource-icon {
+  padding: 5px;
+}
+
+.resource-bulma .resource-icon {
+  padding: 10px;
+}
+
+.resource-css-reference .resource-icon {
+  padding: 20px;
+}
+
 /* Responsiveness */
 
 @media (min-width: 600px) {
@@ -304,5 +362,25 @@ footer .button {
 
   .buttons .button:last-child {
     margin-right: 0;
+  }
+
+  .resources {
+    display: flex;
+  }
+
+  .resource {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+  }
+
+  .resource + .resource {
+    margin-left: 1em;
+  }
+
+  .resource-icon {
+    margin: 0 auto 1em;
   }
 }
