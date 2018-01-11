@@ -393,6 +393,19 @@ footer .button {
   margin-bottom: 1em;
 }
 
+.cover {
+  text-align: center;
+}
+
+.cover .resource {
+  display: block;
+}
+
+.emoji {
+  font-size: 1.125em;
+  vertical-align: middle;
+}
+
 /* Resources */
 
 .resources {
