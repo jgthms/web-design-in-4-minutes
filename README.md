@@ -2,4 +2,24 @@
 
 Learn the basics of web design in 4 minutes!
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/5pucRKHwhsqiAiYS1CdnS4SM/jgthms/web-design-in-4-minutes'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/5pucRKHwhsqiAiYS1CdnS4SM/jgthms/web-design-in-4-minutes.svg' /></a>
+This is a short introduction on how to style a website using CSS.
+
+## What You Will Learn
+
+This tutorial covers the basics of CSS including the following:
+- Styling the content
+- Centering text
+- Changing fonts
+- Using color and contrast
+- Formatting the layout of the page
+- Adding images and graphics content
+
+## Getting Started
+
+Open [Web Design in 4 minutes](https://jgthms.com/web-design-in-4-minutes/) in your favorite browser and follow along.
+
+
+
+## Prerequisites
+
+None! Users can start learning CSS from scratch.
