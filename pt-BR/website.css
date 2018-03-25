@@ -1,0 +1,393 @@
+/* Base styles */
+
+a strong {
+  color: inherit;
+}
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #d8dee9;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+  text-align: center;
+}
+
+/* Initial state */
+
+#visited {
+  background-color: white;
+  bottom: 0;
+  color: white;
+  display: block;
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+#visited:visited {
+  background-color: #e81c4f;
+}
+
+#logo,
+section,
+footer {
+  display: none;
+}
+
+#start {
+  display: block;
+}
+
+/* 00 Content */
+
+html.step0 #content {
+  display: block;
+}
+
+/* 01 Centering */
+
+html.step1 #centering {
+  display: block;
+}
+
+html.step1 header,
+html.step1 main {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* 02 Font family */
+
+html.step2 #font-family {
+  display: block;
+}
+
+html.step2 body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* 03 Spacing */
+
+html.step3 #spacing {
+  display: block;
+}
+
+html.step3 body {
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+html.step3 h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+/* 04 Color and contrast */
+
+html.step4 #color-contrast {
+  display: block;
+}
+
+html.step4 body {
+  color: #555;
+}
+
+html.step4 h1,
+html.step4 h2,
+html.step4 strong {
+  color: #333;
+}
+
+html.step4 a strong {
+  color: inherit;
+}
+
+/* 05 Balance */
+
+html.step5 #balance {
+  display: block;
+}
+
+html.step5 code,
+html.step5 pre {
+  background: #eee;
+}
+
+html.step5 code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+html.step5 pre {
+  padding: 1em;
+}
+
+/* 06 Primary color */
+
+html.step6 #primary-color {
+  display: block;
+}
+
+html.step6 a {
+  color: #e81c4f;
+}
+
+/* 07 Secondary colors */
+
+html.step7 #secondary-colors {
+  display: block;
+}
+
+html.step7 body {
+  background: white;
+  color: #566b78;
+}
+
+html.step7 code,
+html.step7 pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial;
+}
+
+html.step7 pre {
+  border-left: 2px solid #69c;
+}
+
+html.step7 .selector {
+  color: #ec5f67;
+}
+
+html.step7 .keyword {
+  color: #ab7967;
+}
+
+html.step7 .unit {
+  color: #fac863;
+}
+
+html.step7 .attribute {
+  color: #5fb3b3;
+}
+
+html.step7 .number {
+  color: #f99157;
+}
+
+html.step7 .string {
+  color: #c594c5;
+}
+
+/* 08 Custom font */
+
+html.step8 #custom-font {
+  display: block;
+}
+
+html.step8 body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html.step8 h1,
+html.step8 h2,
+html.step8 strong {
+  font-weight: 500;
+}
+
+/* 09 Images */
+
+html.step9 #images {
+  display: block;
+}
+
+html.step9 body {
+  margin: 0;
+  padding: 0;
+}
+
+html.step9 main {
+  padding: 4em 1em;
+}
+
+html.step9 header {
+  background-color: #263d36;
+  background-image: url("header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  max-width: none;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+html.step9 #logo {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+html.step9 header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+html.step9 header a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+html.step9 header a:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+/* 10 Share */
+
+html.step10 #share,
+html.step10 footer {
+  display: block;
+}
+
+/* Classes */
+
+.animate {
+  animation-duration: 1s;
+  animation-name: blink;
+}
+
+@keyframes blink {
+  from {
+    background-color: lightyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+html a.button {
+  border: 1px solid #d8dee9;
+  border-radius: 290486px;
+  color: #b0bfc7;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+html a.button strong {
+  color: #e81c4f;
+}
+
+.button:hover {
+  background: #e81c4f;
+  border-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button em {
+  display: block;
+  font-size: 0.6em;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button strong {
+  color: #e81c4f;
+  transition: color 200ms ease-out;
+}
+
+.button:hover strong {
+  color: white !important;
+}
+
+.button.github strong {
+  color: #333;
+}
+
+.button.github:hover {
+  background: #333;
+}
+
+.button.facebook strong {
+  color: #3b5998;
+}
+
+.button.facebook:hover {
+  background: #3b5998;
+}
+
+.button.twitter strong {
+  color: #55acee;
+}
+
+.button.twitter:hover {
+  background: #55acee;
+}
+
+footer .button {
+  font-size: 0.8em;
+  padding: 1em 2em;
+}
+
+.buttons .button {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* Responsiveness */
+
+@media (min-width: 600px) {
+  .buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+  }
+
+  .buttons .button {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 1em;
+  }
+
+  .buttons .button:last-child {
+    margin-right: 0;
+  }
+}
