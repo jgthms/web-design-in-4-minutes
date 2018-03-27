@@ -1,0 +1,310 @@
+﻿
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>用四分钟创建一个网页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url" content="http://jgthms.com/web-design-in-4-minutes/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Design in 4 minutes">
+    <meta property="og:description" content="Learn the basics of web design in 4 minutes with this interactive tutorial.">
+    <meta property="og:image" content="http://jgthms.com/web-design-in-4-minutes/web-design-in-4-minutes.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jgthms">
+    <meta name="twitter:creator" content="@jgthms">
+    <meta name="twitter:title" content="Web Design in 4 minutes">
+    <meta name="twitter:description" content="Learn the basics of web design in 4 minutes with this interactive tutorial.">
+    <meta name="twitter:image" content="http://jgthms.com/web-design-in-4-minutes/web-design-in-4-minutes.png">
+
+    <link rel="stylesheet" type="text/css" href="website.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="jt.png" alt="JT logo">
+      <h1>用四分钟创建一个网页</h1>
+      <p>
+        <a href="http://jgthms.com" target="_blank">来自 Jeremy Thomas</a>
+      </p>
+    </header>
+
+    <main>
+      <section id="start">
+        <p>假如你想在你<em>自己</em>的网站上给大家分享一个产品、作品集或者一个想法。在你把网页发布到互联网之前，你想要让它看起来吸引人、更专业或者仅仅是得体大方，</p>
+        <p>那么你需要做的 <a class="step" data-step="0" href="#content">第一件事</a> 是什么呢？</p>
+      </section>
+
+      <section id="content">
+        <h2>内容</h2>
+        <p><strong>设计</strong>的目标是增强<strong>内容</strong>的表现力。看起来好像很简单，但是内容作为网站的<strong>基本</strong>元素，不应该留到最后才确定。</p>
+        <p>文字内容，比如你正在看的这段话，组成了网站超过 90% 的部分。对文本内容进行装饰会大有帮助。</p>
+        <p>我们假设你已经准备好了你想要发布的内容，并且创建了一个空的 <code>style.css</code> 文件，我们写的 <a class="step" data-step="1" href="#centering">第一条样式</a> 是什么呢？</p>
+      </section>
+
+      <section id="centering">
+        <h2>居中</h2>
+        <p>较长的文本很难分析，也很难<strong>阅读</strong>。给每行的字数设定一个限度，可以大幅度提高可读性和大段文本的吸引力。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
+        <p>在给<em>文本块</em>写好样式之后，不如给 <a class="step" data-step="2" href="#font-family">文本本身</a> 来加点样式吧。</p>
+      </section>
+
+      <section id="font-family">
+        <h2>字体</h2>
+        <p>浏览器默认字体是 <code>"Times"</code>，令人乏味（主要因为这是「无样式」的字体）。换成一个<strong>无衬线体</strong>，比如 <code>"Helvetica"</code> 或者 <code>"Arial"</code> 可以极大地改善页面的观感。</p>
+        <blockquote>
+  <p>中文字体可以使用 <a href="https://github.com/zenozeng/fonts.css" target="_blank">这个解决方案</a> 来设置字体</p>
+  <cite>译者注</cite>
+</blockquote>
+<pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p><em>如果你一定要用衬线体，可以试试 <code>"Georgia"</code>。</em></p>
+        <p>这些样式让文字更<em>有吸引力</em>，让我们让文字更加 <a class="step" data-step="3" href="#spacing">易读</a> 。</p>
+      </section>
+
+      <section id="spacing">
+        <h2>间距</h2>
+        <p>如果某个页面看起来有「断裂感」，通常是<strong>间距</strong>的问题。在内容的<em>周围</em>和内容<em>之间</em>设置间距可以增加页面的吸引力。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">line-height</span>: <span class="number">1.5</span>;
+  <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
+}
+
+<span class="selector">h2</span> {
+  <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
+  <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
+}</pre>
+        <p>目前为止页面的布局已经改善很多了，让我们再来点 <a class="step" data-step="4" href="#color-contrast">微小的改变</a> 。</p>
+      </section>
+
+      <section id="color-contrast">
+        <h2>颜色和对比</h2>
+        <p>白色背景上的黑色文本会辣眼睛，给页面文本选择一个更柔和的黑色可以让阅读更<strong>舒适</strong>。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#555</span>;
+}</pre>
+        <p>同时为了使页面的<strong>对比度</strong>保持在一个合适的水平，让我们给<strong>重要的文本</strong>选择更黑一点的颜色。</p>
+<pre><span class="selector">h1</span>,
+<span class="selector">h2</span>,
+<span class="selector">strong</span> {
+  <span class="attribute">color</span>: <span class="number">#333</span>;
+}</pre>
+        <p>当页面的大多数内容在视觉上经过改善后，却还有某些元素（比如代码块）看起来 <a class="step" data-step="5" href="#balance">很不和谐</a> 。</p>
+      </section>
+
+      <section id="balance">
+        <h2>平衡</h2>
+        <p>只消一点小动作，就纠正了页面的平衡：</p>
+<pre><span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#eee</span>;
+}
+
+<span class="selector">code</span> {
+  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
+  <span class="attribute">vertical-align</span>: text-bottom;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">padding</span>: <span class="number">1</span>em;
+}</pre>
+        <p>这个时候，你或许想要让你的页面更突出，有一些 <a class="step" data-step="6" href="#primary-color">个性</a> 。</p>
+      </section>
+
+      <section id="primary-color">
+        <h2>基础色</h2>
+        <p>大多数品牌都有一个<strong>基础色</strong>来抓住眼球。在网页上，可以用它来强调可交互元素，比如<strong>链接</strong>。</p>
+<pre><span class="selector">a</span> {
+  <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
+}</pre>
+        <p>但是为了平衡，我们需要 <a class="step" data-step="7" href="#secondary-colors">更多的颜色</a> 。</p>
+      </section>
+
+      <section id="secondary-colors">
+        <h2>辅助色</h2>
+        <p>基础色可以加上一些<em>细微</em>的变化，用在边框、背景甚至主体文本上。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#566b78</span>;
+}
+
+<span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#f5f7f9</span>;
+  <span class="attribute">border-bottom</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#d8dee9</span>;
+  <span class="attribute">color</span>: <span class="number">#a7adba</span>;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
+}</pre>
+        <p>改变了颜色，为什么不再 <a class="step" data-step="8" href="#custom-font">变变形呢</a>？</p>
+      </section>
+
+      <section id="custom-font">
+        <h2>自定义字体</h2>
+        <p>既然文本是网页上最主要的部分，用<strong>自定义字体</strong>就可以让页面更具识别度。</p>
+        <p>你可以嵌入自己制作的 Webfont 或者使用在线服务。比如 <a href="https://typekit.com" target="_blank">Typekit</a>，我们试试看使用 <a href="https://fonts.google.com" target="_blank">Google Fonts</a> 上的 <code>"Roboto"</code> 字体:</p>
+<pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
+
+<span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p>在通过<em>文本</em>增强识别度之后，不如我们再加点 <a class="step" data-step="9" href="#images">超越文字的东西</a>……</p>
+        <blockquote>
+  <p>由于文件较大，中文对 Webfont 的支持并不好，不过现在可以通过 <a href="http://font-spider.org/" target="_blank">字蛛</a> 等工具来构建中文的 Webfont，或者通过 <a href="http://www.justfont.com/" target="_blank">Justfont</a> 等中文 Webfont 服务来实现</p>
+  <p>另外由于某些原因，国内不能支持 Google Fonts，可以使用 <a href="http://libs.useso.com/" target="_blank">这个公共库</a> 来实现</p>
+  <cite>译者注</cite>
+</blockquote>
+      </section>
+
+      <section id="images">
+        <h2>
+          <img src="images.png" alt="Spongebob rainbow meme saying 'Images'">
+        </h2>
+        <p>图形和图标既可以用作装饰支撑你的内容，或者让它作为你想传达的信息的一部分。</p>
+        <p>让我们用一张来自 <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a> 的好看的<strong>背景图</strong>来美化网页的头部。</p>
+<pre><span class="selector">header</span> {
+  <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
+  <span class="attribute">background-image</span>: url(<span class="string">"header.jpg"</span>);
+  <span class="attribute">background-position</span>: center top;
+  <span class="attribute">background-repeat</span>: no-repeat;
+  <span class="attribute">background-size</span>: cover;
+  <span class="attribute">line-height</span>: <span class="number">1.2</span>;
+  <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-align</span>: center;
+}</pre>
+        <p>加一个 <strong>logo</strong>：</p>
+<pre><span class="selector">header img</span> {
+  <span class="attribute">display</span>: inline-block;
+  <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
+  <span class="attribute">vertical-align</span>: top;
+  <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
+}</pre>
+        <p>趁此机会美化一下文本的样式：</p>
+<pre><span class="selector">header h1</span> {
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
+  <span class="attribute">font-weight</span>: <span class="number">300</span>;
+}
+
+<span class="selector">header a</span> {
+  <span class="attribute">border</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#e81c4f</span>;
+  <span class="attribute">border-radius</span>: <span class="number">290486</span><span class="unit">px</span>;
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">0.6</span><span class="unit">em</span>;
+  <span class="attribute">letter-spacing</span>: <span class="number">0.2</span><span class="unit">em</span>;
+  <span class="attribute">padding</span>: <span class="number">1</span><span class="unit">em</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-transform</span>: uppercase;
+  <span class="attribute">text-decoration</span>: none;
+  <span class="attribute">transition</span>: none <span class="number">200</span><span class="unit">ms</span> ease-out;
+  <span class="attribute">transition-property</span>: color, background;
+}
+
+<span class="selector">header a:hover</span> {
+  <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
+  <span class="attribute">color</span>: white;
+}</pre>
+        <p><a href="#header">看下效果吧！</a></p>
+        <p>我们在几分钟之内就根据一些网页设计的原则，创建了一个得体的页面。我们只剩下 <a class="step" data-step="10" href="#share">最后一件事了</a>……</p>
+      </section>
+
+      <section id="share">
+        <h2>点赞和分享吧！</h2>
+        <nav class="buttons">
+          <a class="button github" href="https://github.com/jgthms/web-design-in-4-minutes" target="_blank">
+            <em>Download on</em> <strong>GitHub</strong>
+          </a>
+          <a
+            class="button facebook"
+            href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton%3Fsiteid%3D2982404728&type=button&ralateUid=1731311442&language=zh_cn&appkey=2982404728&title=%E7%94%A8%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95%E5%9B%9B%E5%88%86%E9%92%9F%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E3%80%82&searchPic=false&style=number"
+            target="_blank"
+            >
+            <em>Share on</em> <strong>Weibo</strong>
+          </a>
+          <a
+            class="button twitter"
+            data-social-target="http://jgthms.com/web-design-in-4-minutes/"
+            href="https://twitter.com/intent/tweet?text=Web%20Design%20in%204%20minutes&url=http%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F&via=jgthms"
+            target="_blank"
+            >
+            <em>Share on</em> <strong>Twitter</strong>
+          </a>
+        </nav>
+        <p>如果你想学习网页设计的成果内容，请查看 <a href="http://marksheet.io" target="_blank"><strong>MarkSheet</strong>, my free HTML and CSS tutorial</a>。<br>
+        或者你现在就想实操，试试 <a href="http://bulma.io" target="_blank"><strong>Bulma</strong>, my CSS framework based on Flexbox</a>。</p>
+        <p>感谢阅读。</p>
+      </section>
+
+      <footer>
+        <a class="button" href="https://twitter.com/jgthms" target="_blank"><strong>@jgthms</strong> 制作</a> <a class="button" href="http://weibo.com/979901978" target="_blank"><strong>Pan</strong> 翻译</a>
+      </footer>
+    </main>
+
+    <a id="visited" href="#share">你似乎曾经来过这里，是否跳转到最后？</a>
+
+<script type="text/javascript">
+var steps = document.querySelectorAll('.step');
+var body = document.querySelector('body');
+var html = document.querySelector('html');
+
+for (var i=0; i < steps.length; i++) {
+  var element = steps[i];
+  element.onclick = function(event) {
+    var number = this.dataset.step;
+    var target = this.href;
+    addStep(number, target);
+  }
+};
+
+function removeVisited() {
+  if (document.getElementById('visited')) {
+    body.removeChild(document.getElementById('visited'));
+  }
+}
+
+function addStep(number, target) {
+  html.className += ' step' + number;
+
+  removeVisited();
+
+  if (target !== '') {
+    var id = target.split('#')[1];
+    document.getElementById(id).className = 'animate';
+  }
+
+  if (number === '7') {
+    loadGoogleFont();
+  }
+}
+
+visited.onclick = function() {
+  loadGoogleFont();
+  for (var i=0; i < 11; i++) {
+    html.className += ' step' + i;
+  }
+  removeVisited();
+}
+
+WebFontConfig = {
+  google: {
+    families: ['Roboto:300,400,500']
+  }
+};
+
+function loadGoogleFont() {
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://ajax.useso.com/ajax/libs/webfont/1.6.16/webfont.js';
+    s.parentNode.insertBefore(wf, s);
+  })(document);
+}
+</script>
+  </body>
+</html>
