@@ -52,6 +52,7 @@ body {
 h2 {
   margin-top: 1em;
   padding-top: 1em;
+  color :#f44242;
 }
 
 /* 04 Color and contrast */
@@ -61,7 +62,6 @@ body {
 }
 
 h1,
-h2,
 strong {
   color: #333;
 }
