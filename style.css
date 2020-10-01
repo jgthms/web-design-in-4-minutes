@@ -1,5 +1,7 @@
 /* Base styles */
-
+a{
+	text-decoration: none;
+}
 a strong {
   color: inherit;
 }
