@@ -109,7 +109,7 @@ pre {
 }
 
 .selector {
-  color: #ec5f67;
+  color: #ef767d;
 }
 
 .keyword {
@@ -154,7 +154,7 @@ body {
 }
 
 main {
-  padding: 4em 1em;
+  padding: 4em 1.1em;
 }
 
 header {
@@ -203,7 +203,7 @@ header a:hover {
 /* Classes */
 
 .animate {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: blink;
 }
 
@@ -238,7 +238,7 @@ html a.button {
   display: block;
   font-size: 0.6em;
   font-style: normal;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
