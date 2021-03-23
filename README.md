@@ -2,9 +2,6 @@
 <!Doctype Html>  
 <Html>     
 <Head>      
-<Title>     
-Web Design Contribution 
-</Title>  
 </Head>  
 <Body>   
 WEB DESIGN IN 4 MINUTES <br>  
